@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARK WEB MODE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Share+Tech+Mono&display=swap');body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #ff0000;
+  font-family: 'Share Tech Mono', monospace;
+  overflow: hidden;
+  animation: bgFlicker 3s infinite;
+}
+
+@keyframes bgFlicker {
+  0%, 100% { background: #000; }
+  50% { background: #111; }
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Nosifer', cursive;
+  font-size: 2.5em;
+  color: crimson;
+  text-shadow: 0 0 15px red, 0 0 30px darkred;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px -2px lime, 2px 2px red; }
+  40% { text-shadow: -3px 0 magenta, 3px 0 cyan; }
+  60% { text-shadow: 2px 2px yellow, -2px -2px red; }
+  80% { text-shadow: 3px -3px blue, -3px 3px lime; }
+  100% { text-shadow: 2px 0 red, -2px 0 blue; }
+}
+
+p, li {
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 0 0 5px red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li::before {
+  content: "☠ ";
+  color: crimson;
+}
+
+.end {
+  margin-top: 40px;
+  font-family: 'Nosifer', cursive;
+  font-size: 1.5em;
+  color: #ff0000;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Glitch background overlay */
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,0,0,0.05) 0px,
+    rgba(0,0,0,0.1) 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  animation: scan 5s linear infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.myinstants.com/media/sounds/glitch-sound-effect.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>  <div class="container">
+    <h1>[ LOGIN SUKSES - DARK WEB MODE ]</h1><p>☠ LIHAT INI WAHAI BAJINGAN ☠<br>
+KORUPTOR = TIKUS BUSUK PENGHISAP DARAH RAKYAT!!!</p>
+
+<p>Rakyat kecil menjerit:</p>
+<ul>
+  <li>Perut lapar tapi kalian kenyang!</li>
+  <li>Suara kami kalian bungkam!</li>
+  <li>Janji manis kalian = racun busuk demokrasi!</li>
+</ul>
+
+<p>Kalian duduk di kursi empuk,<br>
+sementara rakyat tercekik hutang & harga melambung.<br>
+INI BUKAN NEGERI MERDEKA — INI PANGGUNG SANDIWARA!</p>
+
+<p>Tuntutan kami:</p>
+<ul>
+  <li>HUKUM MATI bagi tikus rakus pengkhianat bangsa</li>
+  <li>Robohkan DPR boneka yang hanya jadi pajangan</li>
+  <li>Keadilan nyata, bukan sekadar slogan basi</li>
+  <li>Suara rakyat = hukum tertinggi, bukan suara elit busuk</li>
+</ul>
+
+<div class="end">
+  ☠ RIP INDONESIAN DEMOCRACY ☠<br>
+  [ END OF TRANSMISSION... ]
+</div>
+
+  </div>
+  <div class="scanlines"></div>
+</body>
+</html>
